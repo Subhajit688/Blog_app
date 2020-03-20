@@ -1,0 +1,17 @@
+<%- include('header'); -%>
+
+
+
+    <h1> Home page </h1>
+    <p>Writing a blog post is a little like driving; you can study the highway code (or read articles telling you how to write a blog post) for months, but nothing can prepare you for the real thing like getting behind the wheel and hitting the open road.
+        Or something.</p>
+    <a class="btn btn-success" href="/compose">CREATE NEW BLOG</a>
+    <% blog.forEach((i)=>{ %>
+        <h2>
+            <%= i.title %>
+        </h2>
+
+        <p>
+            <%= i.post.substring(0,50) %>...<a href="/<%= i._id %>" class="btn btn-outline-info btn-sm">show more</a>
+        </p>
+        <% }) %>

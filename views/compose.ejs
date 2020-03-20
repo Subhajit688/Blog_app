@@ -1,0 +1,20 @@
+<%- include('header'); -%>
+
+
+    <div>
+        <h2> Compose Here </h2>
+        <div class="form-group">
+            <form action="/" method="POST">
+                <label for="_title">Title</label>
+                <input id="_title" type="text" name="title" class="form-control"><br>
+                <p></p>
+                <label for="_post">Post</label>
+                <textarea name="post" id="_post" cols="30" rows="10" class="form-control"></textarea><br>
+                <button type="submit"> Post </button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <%- include('footer'); -%>

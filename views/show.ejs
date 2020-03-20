@@ -1,0 +1,18 @@
+<%- include('header'); -%>
+
+    <h1>
+        <%= title %>
+    </h1>
+    <p>
+        <%= post %>
+    </p>
+
+    <a class="btn btn-primary" href="<%= id %>/update">Edit</a>
+    <p></p>
+    <form action="/<%= id %>?_method=DELETE" method="POST">
+        <button class="btn btn-danger"> Delete </button>
+    </form>
+
+
+
+    <%- include('footer'); -%>
